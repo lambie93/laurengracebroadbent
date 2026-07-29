@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>laurengracebroadbent</title>
 </head>
 <body>
-    <h1><i>laurengracebroadbent</i></h1>
+    <header>
+        <h1>laurengracebroadbent</h1>
+        <ul style ="list-style-type: none;">
+            <li><a href="about.html">About</a></li>
+            <li><a href="school.html">School</a></li>
+            <li><a href="extracurriculars.html">Extracurriculars</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <main>
     <h2><u>School</u></h2>
     <h3>Schedule:</h3>
-    <table border="1" width = "50%" style="text-align: center; border-color: #ffecbc;">
+    <table style="border: 2px solid #fff; border-radius: 15px; width: 50%; text-align: center;">
         <tr>
             <th></th>
             <th>Monday</th>
@@ -122,10 +136,35 @@
             <td>Physical Education</td>
         </tr>
     </table>
-    <h2><u>Extracurriculars</u></h2>
-    <h3><mark style="background: #fbd28a; color: #fff;"><i>Hack Club</i></mark></h3>
-    <p><b><span style="color:#ffecbc">Events</span></b></p>
-     <a href="https://sleepover.hackclub.com" target="_blank">
-        <img src="https://sleepover.hackclub.com/_next/image?url=%2Fbackground%2Fsleepover_logo.PNG&w=1920&q=75" alt="Sleepover Hack Club" width="300">
-    </a>
+    <h2><u>Contact</u></h2>
+    <br>
+        <label for="Name">First Name:</label>
+        <br>
+        <input type="text" name="Name" placeholder="First Name" required>
+        <br><br>
+        <label for="LastName">Last Name:</label>
+        <br>
+        <input type="text" name="LastName" placeholder="Last Name" required>
+        <br><br>
+        <label for="Email">Email:</label>
+        <br>
+        <input type="email" name="Email" placeholder="Email Address" required>
+        <br><br>
+        <label for="Phone">Phone Number (#):</label>
+        <br>
+        <input type="tel" name="Phone" placeholder="xxx-xxx-xxxx" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        <br><br>
+        <label for="Message">Message:</label>
+        <br>
+        <textarea name="Message" placeholder="Message" required></textarea>
+        <br><br>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+    </main>
+        <footer>
+            <p>&copy; 2026 laurengracebroadbent. All rights reserved.</p>
+            <p><b>Email Address:</b></p>
+            <a href="mailto:laurengracebroadbent@gmail.com">laurengracebroadbent@gmail.com</a>
+        </footer>
+    </form>
 </body>
